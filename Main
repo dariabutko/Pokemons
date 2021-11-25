@@ -1,0 +1,22 @@
+package main;
+import pokemons.*;
+import ru.ifmo.se.pokemon.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Battle b = new Battle();
+        Pokemon odin = new Grotle("odin", 15);
+        Pokemon dva = new Gulpin("dva", 26);
+        Pokemon tri = new Phione("tri", 20);
+        Pokemon chetire = new Swalot("chetire", 12);
+        Pokemon pyat = new Torterra("pyat", 5);
+        Pokemon shest = new Turtwig("shest", 7);
+        b.addAlly(odin);
+        b.addAlly(dva);
+        b.addAlly(tri);
+        b.addFoe(chetire);
+        b.addFoe(pyat);
+        b.addFoe(shest);
+        b.go();
+    }
+}
